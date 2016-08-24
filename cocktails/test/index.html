@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>test | cocktails | Steven Fewster</title>
+    
+    <meta name="description" content="Steven Fewster is a web developer and contractor in the finance industry and cocktail making enthusiast">
+    <meta name="subject" content="Cocktails, Code, Photos and Opinion">
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google-site-verification" content="w7YZGh_BpvwXJYukVGLh6KQPPGpdT42N1Bi0eH6YZvw">
+    <meta name="generator" content="metalsmith">
+    <meta name="abstract" content="Personal blog site for Steven Fewster">
+    <meta name="topic" content="Cocktails and Code">
+    <meta name="summary" content="Steven Fewster is a front end developer with over 15 years of experience of javascript and associated technologies, and an unhealthy interest in making cocktails">
+    <meta name="url" content="http://stevenfewster.com/">
+    <meta name="directory" content="submission">
+    <meta name="category" content="cocktails">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com www.google-analytics.com">
+    !-->
+    <meta name="ICBM" content="51.3937930,-0.4155300">
+    <meta name="geo.position" content="51.3937930;-0.4155300">
+    <meta name="geo.region" content="GB">
+    <meta name="geo.placename" content="London">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700italic,800,800italic,700,600italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">    
+    <link href="/cocktails/test" rel="canonical">
+
+    <link href="/pages/copyright" rel="copyright">
+    <link href="/pages/about-me" rel="author">
+
+    <link href="/styles/main.css" rel="stylesheet">
+
+    <!--
+    <link rel="alternate" href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS">
+    <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+    <link rel="alternate" href="https://es.example.com/" hreflang="es">
+    <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
+    <link rel="me" href="mailto:name@example.com">
+    <link rel="me" href="sms:+15035550125">
+    <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
+    <link rel="index" href="https://example.com/" title="DeWitt Clinton">
+    <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
+    <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
+    <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+    <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+    <link rel="first" href="https://example.com/atomFeed.php">
+    <link rel="next" href="https://example.com/atomFeed.php?page=4">
+    <link rel="previous" href="https://example.com/atomFeed.php?page=2">
+    <link rel="last" href="https://example.com/atomFeed.php?page=147">
+    <link rel="amphtml" href="https://www.example.com/url/to/amp-version.html">
+    <link rel="import" href="component.html">
+    !-->
+
+    <!-- Prefetching, preloading, prebrowsing
+    <link rel="dns-prefetch" href="//example.com/">
+    <link rel="preconnect" href="https://www.example.com/">
+    <link rel="prefetch" href="https://www.example.com/">
+    <link rel="prerender" href="https://example.com/">
+    <link rel="subresource" href="styles.css">
+    <link rel="preload" href="image.png">
+    
+    More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="/icon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="/icon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="/icon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="/icon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/icon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="/icon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="/icon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="/icon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="/icon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/icon/android-icon-192x192.png" rel="icon" type="image/png" sizes="192x192">
+    <link href="/icon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/icon/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+    <link href="/icon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="/icon/manifest.json" rel="manifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- HTML5 shiv for IE8 support
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body class="cocktails">
+
+<div id="header">
+    <div class="top">
+        <!-- div class="search">
+            <form role="form">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control input-sm" placeholder="Search.." />
+                    <i class="form-control-feedback fa fa-search"></i>
+                </div>
+            </form>
+        </div !-->
+        <a class="brand" href="/">
+            <span>STEVEN<img src="/icon/android-icon-48x48.png" height="48" width="48" />FEWSTER</span>
+        </a>
+    </div>
+
+    
+    <nav class="navbar navbar-ada" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-item nav-item-cocktails" href="/cocktails">cocktails</a></li>
+                <li><a class="nav-item nav-item-code" href="/code">code</a></li>
+                <li><a class="nav-item nav-item-links" href="/links">links</a></li>
+                <li><a class="nav-item nav-item-photos" href="/photos">photos</a></li>
+                <li><a class="nav-item nav-item-projects" href="/projects">projects</a></li>
+                <li><a class="nav-item nav-item-sundries" href="/sundries">sundries</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav></div>
+<div id="single">
+
+    <div class="container">
+
+        <div class="post">
+            <img src="/img/cocktails/" class="img-responsive" />
+
+            <div class="caption">
+                <div class="header">
+                    <span class="post-tag">#cocktails</span>
+                    <h1>test</h1>
+                </div>
+
+                <h2 id="level-02-heading">Level 02 Heading</h2>
+<p>Lorem ipsum <em>emphasised text</em> dolor sit amet, <strong>strong text</strong>
+consectetur adipisicing elit, <abbr title="">abbreviated text</abbr> sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut
+<q>quoted text</q> enim ad minim veniam, quis nostrud exercitation <a href="/">link text</a>
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+<ins>inserted text</ins> irure dolor in reprehenderit in voluptate velit esse cillum
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat <code>code text</code> cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></p>
+<pre><code class="lang-javascript">var i = 1;
+for (var j = 2; j &lt; i; ++j) {
+    console.log(&#39;testing&#39; + j);
+}
+</code></pre>
+<p>Suspendisse rhoncus, est ac sollicitudin viverra, leo orci sagittis massa, sed condimentum <acronym title="">acronym text</acronym> est tortor a lectus. Curabitur porta feugiat ullamcorper. Integer lacinia mi id odio faucibus eget tincidunt nisl iaculis. Nam adipiscing hendrerit turpis, et porttitor felis sollicitudin et. Donec dictum massa ac neque accumsan tempor. Cras aliquam, ipsum sit amet laoreet hendrerit, purus <del>deleted text</del> sapien convallis dui, et porta leo ipsum ac nunc. Nullam ornare porta dui ac semper. Cras aliquam laoreet hendrerit. Quisque vulputate dolor eget mi porta vel porta nisl pretium. Vivamus non leo magna, quis imperdiet risus. Morbi tempor risus placerat tellus imperdiet fringilla.
+</p></p>
+<blockquote>
+<p>I am not one who was born in the possession of knowledge; I am one who is fond of antiquity, and earnest in seeking it there.</p>
+</blockquote>
+
+<p><cite><a href="/">Confucius, The Confucian Analects</a></cite>,  (551 BC - 479 BC)</p>
+
+<h3>Level 03 Heading</h3>
+
+<p>Extended paragraph. <a href="">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ol>
+<li>Unus</li>
+<li>Duo</li>
+<li>Tres</li>
+<li>Quattuor</li>
+</ol>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+anim id est laborum.</p>
+
+<h3>Header 3</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+
+<h4>Unordered lists</h4>
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipisicing elit</li>
+      <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+      <li>Ut enim ad minim veniam</li>
+    </ul>
+<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+
+<pre><code>body { font:0.8125em/1.618 Arial, sans-serif;
+background-color:#fff;
+color:#111;
+}</code></pre>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+anim id est laborum.</p>
+
+<h4>Header 4</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+
+<dl>
+<dt>Definition list</dt>
+<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat.</dd>
+<dt>Lorem ipsum dolor sit amet</dt>
+<dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat.</dd>
+
+</dl>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+<h4>Ordered list</h4>
+<ol>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item
+                            <ol>
+                                <li>List item level 2</li>
+                                <li>List item level 2
+                                    <ol>
+                                        <li>List item level 3</li>
+                                        <li>List item level 3</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <h4>Unordered list</h4>
+                    <ul>
+                        <li>List item 01</li>
+                        <li>List item 02</li>
+                        <li>List item 03
+                            <ul>
+                                <li>List item level 2</li>
+                                <li>List item level 2
+                                    <ul>
+                                        <li>List item level 3</li>
+                                        <li>List item level 3</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.</p>
+
+
+<p>   <h4>Tables</h4>
+    <table summary="Jimi Hendrix albums">
+  <caption>Jimi Hendrix - albums</caption>
+  <thead>
+      <tr>
+        <th>Album</th>
+        <th>Year</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+          <tfoot>
+      <tr>
+        <td>Album</td>
+        <td>Year</td>
+        <td>Price</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Are You Experienced </td>
+        <td>1967</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>Axis: Bold as Love</td>
+        <td>1967</td>
+        <td>$12.00</td>
+      </tr>
+     <tr>
+        <td>Electric Ladyland</td>
+        <td>1968</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>Band of Gypsys</td>
+        <td>1970</td>
+        <td>$12.00</td>
+      </tr>
+            <tbody>
+    </table>
+  <p>
+I am <a href="http://devkick.com/lab/tripoli/sample.php?abc123">the a tag</a> example<br></p>
+<p>I am <abbr title="test">the abbr tag</abbr> example<br></p>
+<p>I am <acronym>the acronym tag</acronym> example<br>
+I am <b>the b tag</b> example<br>
+I am <big>the big tag</big> example<br></p>
+<p>I am <cite>the cite tag</cite> example<br></p>
+<p>I am <code>the code tag</code> example<br>
+I am <del>the del tag</del> example<br>
+I am <dfn>the dfn tag</dfn> example<br></p>
+<p>I am <em>the em tag</em> example<br></p>
+<p>I am <font face="verdana">the font tag</font> example<br>
+I am <i>the i tag</i> example<br>
+I am <ins>the ins tag</ins> example<br></p>
+<p>I am <kbd>the kbd tag</kbd> example<br></p>
+<p>I am <q>the q tag <q>inside</q> a q tag</q> example<br>
+I am <s>the s tag</s> example<br>
+I am <samp>the samp tag</samp> example<br></p>
+<p>I am <small>the small tag</small> example<br>
+I am <span>the span tag</span> example<br>
+I am <strike>the strike tag</strike> example<br>
+I am <strong>the strong tag</strong> example<br></p>
+<p>I am <sub>the sub tag</sub> example<br>
+I am <sup>the sup tag</sup> example<br>
+I am <tt>the tt tag</tt> example<br>
+I am <var>the var tag</var> example<br></p>
+<p>I am <u>the u tag</u> example
+</p></p>
+<p>This is a &lt;p&gt; with some <code>code</code> inside.</p>
+
+<p><h3>What is Lorem Ipsum?</h3></p>
+<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p><strong>This</strong> Lorem Ipsum HTML example is created from the parts of Placeholder Markup with Lorem Ipsum - Jon Tan,
+Emastic CSS Framework,
+Tripoli CSS Framework and
+Baseline CSS Framework .</p>
+
+<address>Address: somewhere, World</address>
+
+
+
+<p>
+<a href="#">Link</a><br>
+<strong>&lt;strong&gt;</strong><br>
+<del>&lt;del&gt; deleted</del><br>
+<dfn>&lt;dfn&gt; dfn</dfn><br>
+<em>&lt;em&gt; emphasis</em>
+</p>
+<pre>
+<code>&lt;html&gt;</code>
+<code>&lt;head&gt;</code>
+<code>&lt;/head&gt;</code>
+<code>&lt;body&gt;</code>
+<code>&lt;div class = &quot;main&quot;&gt; &lt;div&gt;</code>
+<code>&lt;/body&gt;</code>
+<code>&lt;/html&gt; </code>
+</pre>
+
+<tt>&lt;tt&gt;
+Pellentesque tempor, dui ut ultrices viverra, neque urna blandit nisi, id accumsan dolor est vitae risus.
+</tt>
+
+<hr>
+
+
+
+<!-- this following markup from http://bluetrip.org/ -->
+<dl>
+<dt>Description list title 01</dt>
+
+<dd>Description list description 01</dd>
+<dt>Description list title 02</dt>
+<dd>Description list description 02</dd>
+<dd>Description list description 03</dd>
+
+</dl>
+<table>
+<caption>Table Caption</caption>
+
+<thead>
+<tr>
+  <th>Table head th</th>
+  <td>Table head td</td>
+</tr>
+
+</thead>
+<tfoot>
+<tr>
+
+  <th>Table foot th</th>
+  <td>Table foot td</td>
+</tr>
+</tfoot>
+
+<tbody>
+<tr>
+  <th>Table body th</th>
+
+  <td>Table body td</td>
+</tr>
+<tr>
+  <td>Table body td</td>
+
+  <td>Table body td</td>
+</tr>
+</tbody>
+
+</table>
+
+<hr>
+
+<form action="#">
+<fieldset>
+<legend>Form legend</legend>
+
+<div><label for="f1">Optional Text input:</label><input type="text" id="f1" value="input text" /></div>
+<div><label for="rt1">Required Text input:</label><input type="text" id="rt1" required /></div>
+<div><label for="twp1">Text input with pattern requirement and placeholder:</label><input type="text" pattern="\d{5}(-\d{4})?" title="a US Zip code, with or without the +4 exension" placeholder="12345-6789"/></div>
+<div><label for="s1">Search input:</label><input type="search" id="s1" /></div>
+<div><label for="e1">Email input:</label><input type="email" id="e1" /></div>
+<div><label for="u1">URL input:</label><input type="url" id="u1" /></div>
+<div><label for="pw">Password input:</label><input type="password" id="pw" value="password" /></div>
+<div><label for="f2">Radio input:</label><input type="radio" id="f2" /></div>
+
+<div><label for="f3">Checkbox input:</label><input type="checkbox" id="f3" /></div>
+<div><label for="f4">Select field:</label><select id="f4"><option>Option 01</option><option>Option 02</option></select></div>
+
+<div><label for="f5">Textarea:</label><textarea id="f5" cols="30" rows="5" >Textarea text</textarea></div>
+<div><label for="f6">Input Button:</label> <input type="button" id="f6" value="button text" /></div>
+
+<div><label for="f7">Submit Button:</label> <input type="submit" id="f7" value="button text" /></div>
+
+</fieldset>
+
+</form>
+
+
+<!-- thx peter beverloo: http://peter.sh/examples/?/html/meter-progress.html -->
+
+
+<p id="no-support" style="color: red; margin-bottom: 12px;">
+Your browser does not support these elements yet! Consider downloading a <a href="http://tools.peter.sh/download-latest-chromium.php">Chromium Nightly</a>.<br />
+
+</p>
+
+<p><h3>&lt;progress&gt;</h3></p>
+<p><p>
+The progress element (spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-progress-element">4.10.16</a>) represents the completion progress of a task and can be both indeterminate as determinate.
+</p></p>
+<ul class="compact">
+<li>
+ <label>Indeterminate</label>
+ <progress max="100"></progress>
+</li>
+<li>
+ <label>Progress: 0%</label>
+ <progress max="10" value="0"></progress>
+</li>
+<li>
+ <label>Progress: 100%</label>
+ <progress max="3254" value="3254"></progress>
+</li>
+<li>
+ <label>Progress: 57%</label>
+ <progress max="0.7" value="0.4"></progress>
+</li>
+<li>
+ <label>Javascript</label>
+ <progress id="progress-javascript-example"></progress>
+</li>
+</ul>
+
+<p><h3>&lt;meter&gt;</h3></p>
+<p><p>
+Displaying a scalar measurement within a known range, like hard drive usage, can be done using the meter element (spec: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-meter-element">4.10.17</a>)
+</p></p>
+<ul class="compact">
+<li>
+ <label>Meter: empty</label>
+ <meter value="0"></meter>
+</li>
+<li>
+ <label>Meter: full</label>
+ <meter value="1"></meter>
+</li>
+<li>
+ <label>Meter: &quot;a bit&quot;</label>
+ <meter min=".34" max=".41" value=".36"></meter>
+</li>
+<li>
+ <label>Preferred usage</label>
+ <meter min="50" max="250" low="100" high="200" value="120"></meter>
+</li>
+<li>
+ <label>Too much traffic</label>
+ <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+</li>
+<li>
+ <label>Optimum value</label>
+ <meter value=".5" optimum=".8"></meter>
+</li>
+<li>
+ <label>Javascript</label>
+ <meter id="meter-javascript-example" value="0"></progress>
+</li>
+</ul>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="footer">
+    <!-- div id="subscribe">
+        <div class="container">
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <p>Stay updated on latest updates &amp; promotions</p>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Your email address">
+                <span class="input-group-btn">
+                  <button class="btn btn-ada-dark" type="button">Subscribe</button>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div !-->
+    <div id="links">
+        <div class="container">
+
+            <div class="col-sm-2">
+                <p class="brand"><img src="/icon/android-icon-48x48.png" height="48" width="48" /></p>
+            </div>
+
+            <div class="col-sm-8">
+                <ul class="list-inline">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <ul class="list-inline">
+                    <li><a href="https://github.com/StevenFewster"><i class="fa fa-github"></i></a></li>
+                    <li><a href="http://stackoverflow.com/users/2862040"><i class="fa fa-stack-overflow"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<a id="scroll-to-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!-- Vendor Scripts -->
+<script src="/scripts/jquery-1.11.3.min.js"></script>
+<script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/owl.carousel.js"></script>
+<script src="/scripts/smoothScroll.js"></script>
+<script src="/scripts/wow.min.js"></script>
+
+<!-- Theme Scripts -->
+<script src="/scripts/main.js"></script>
+
+
+<!--// ga //-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38594985-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
