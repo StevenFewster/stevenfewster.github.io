@@ -1130,7 +1130,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .img-rounded {
@@ -12569,6 +12569,45 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+body {
+  font-family: 'Lora', sans-serif;
+  font-size: 16px;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.navbar-nav,
+.brand,
+.post-title {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-size: 1em;
+  margin: 2em 0 0 0;
+  line-height: 1.58em;
+  letter-spacing: -0.03em;
+}
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.15em;
+  margin: 65px 0 0 0;
+}
+h2,
+.h2 {
+  font-size: 2em;
+  line-height: 1.22em;
+  margin: 28px 0 0 0;
 }
 .card-link {
   display: inline-block;
