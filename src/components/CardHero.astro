@@ -1,0 +1,17 @@
+---
+import CategoryLink from "./CategoryLink.astro";
+import { Image } from "astro:assets";
+const { post } = Astro.props;
+---
+<section class="text-gray-600 body-font">
+  <div class="flex mx-5 my-0 md:my-4   md:flex-row flex-col items-center bg-wedgewood-50">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <Image class="object-cover object-center" alt="hero" src={post.data.cover} height="341" width="512">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:px-12 md:px-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <CategoryLink post={post} />
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{ post.data.title }</h1>
+      <p class="mb-8 leading-relaxed">{ post.data.description }</p>
+    </div>
+  </div>
+</section>

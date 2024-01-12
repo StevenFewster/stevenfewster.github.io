@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import {Category} from '../enums';
+import CardBase from '../components/CardBase.astro';
+
+const posts = (await getCollection('BlogPosts')).filter(a => [Category.other, Category.photos].includes(a.data.category as Category)).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="h-14 bg-[url('/backgrounds/radiant-gradient.png')] bg-repeat bg-fixed" >
+				<h1 class="container mx-auto py-3 text-wedgewood-50 text-2xl"><span class="px-4">Editorials</span></h1>
+			</div>
+			<section class="container mx-auto flex flex-wrap">
+					{
+						posts.map((post: any) => (
+							<CardBase post={post} hideCategory="true" />
+						))
+					}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

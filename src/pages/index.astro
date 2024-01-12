@@ -1,0 +1,51 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import { Category } from "../enums";
+import CardBase from "../components/CardBase.astro";
+import CardHero from "../components/CardHero.astro";
+import CardLong from "../components/CardLong.astro";
+
+const posts = (await getCollection("BlogPosts"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .reduce((prev, curr) => {
+    if (curr.data.category === Category.cocktails) {
+      prev[Category.cocktails] = prev[Category.cocktails] || [];
+      prev[Category.cocktails].push(curr);
+    } else {
+      prev.all = prev.all || [];
+      prev.all.push(curr);
+    }
+    return prev;
+  }, {} as any);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="container mx-auto flex flex-wrap">
+        {
+          posts.all.map((post: any, i: number) => {
+            if (i == 0) {
+              return <CardHero post={post} />;
+			} else if (i > 0 && i < 4) {
+              return <CardLong post={post} />;
+            } else {
+              return <CardBase post={post} />;
+            }
+          })
+        }
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,5 @@
+---
+const { post } = Astro.props;
+const path = `/${post.data.category}`;
+---
+<h2 class="tracking-widest text-xs title-font font-medium text-wedgewood-400 mb-1 uppercase"><a class=" hover:underline decoration-4" href={path}>{ post.data.category }</a></h2>

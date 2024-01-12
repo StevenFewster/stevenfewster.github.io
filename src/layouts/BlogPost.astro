@@ -1,0 +1,62 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import CategoryLink from '../components/CategoryLink.astro';
+import SourceAttr from '../components/SourceAttr.astro';
+import { Image, getImage } from 'astro:assets';
+import type { UnresolvedImageTransform } from 'astro';
+
+type Props = CollectionEntry<'BlogPosts'>['data'];
+
+const { title, description, date, updatedDate, category, attr } = Astro.props;
+const cover: any = await getImage({
+	src: Astro.props.cover,
+	width: 1020,
+	height: 510
+});
+const sourceLink = attr && attr.sourceLink || '';
+const sourceName = attr && attr.sourceName || '';
+const siteLink = attr && attr.siteLink || '';
+const siteName = attr && attr.siteName || '';
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="container mx-auto text-center ">
+					<CategoryLink post={ { data: Astro.props }} />
+				</div>
+				<div class="container mx-auto prose lg:prose-xl px-3">
+					<div class="title">
+						<h1 class="text-3xl text-center">{title}</h1>
+						<div class="date text-right">
+							<FormattedDate date={date} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<div class="hero-image">
+							{ cover && <img width={1020} height={510} src={cover.src} alt="" /> }
+							{ attr && <SourceAttr {sourceLink} {sourceName} {siteLink} {siteName} /> }
+						</div>
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
