@@ -1,0 +1,3 @@
+[submodule "src/content/BlogPosts"]
+	path = src/content/BlogPosts
+	url = https://github.com/stevenfewster/BlogPosts
