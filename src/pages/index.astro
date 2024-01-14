@@ -11,6 +11,7 @@ import CardHero from "../components/CardHero.astro";
 import CardLong from "../components/CardLong.astro";
 
 const posts = (await getCollection("BlogPosts"))
+.filter((item) => item.data.category !== Category.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .reduce((prev, curr) => {
     if (curr.data.category === Category.cocktails) {
@@ -27,7 +28,7 @@ const posts = (await getCollection("BlogPosts"))
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} category="Cocktails and Code" />
   </head>
   <body>
     <Header />

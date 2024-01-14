@@ -9,6 +9,8 @@ export enum Category {
     cocktails = 'cocktails',
     other = 'other',
     photos = 'photos',
-    projects = 'projects'
+    projects = 'projects',
+    editorials = 'editorials',
+    draft = 'draft'
 };
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stevenfewster.com/sitemap.xml
+Sitemap: https://stevenfewster.com/sitemap-index.xml

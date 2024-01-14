@@ -8,21 +8,28 @@ import FormattedDate from '../components/FormattedDate.astro';
 import {Category} from '../enums';
 import CardBase from '../components/CardBase.astro';
 
-const posts = (await getCollection('BlogPosts')).filter(a => a.data.category == Category.cocktails).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
+
+
+const { categoryName, categories } = Astro.props;
+
+const posts = (
+    await getCollection('BlogPosts'))
+        .filter(a => categories.includes(a.data.category))
+        .sort(
+	        (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+        );
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} category={Category.cocktails} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
 			<div class="h-14 bg-[url('/backgrounds/radiant-gradient.png')] bg-repeat bg-fixed" >
-				<h1 class="container mx-auto py-3 text-wedgewood-50 text-2xl"><span class="px-4">Cocktails</span></h1>
+				<h1 class="container mx-auto py-3 text-wedgewood-50 text-2xl"><span class="px-4">{categoryName}</span></h1>
 			</div>
 			<section class="container mx-auto flex flex-wrap">
 					{

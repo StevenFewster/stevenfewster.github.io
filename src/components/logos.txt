@@ -27,3 +27,29 @@
             ></path></svg
         >
     </a> -->
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Steven Fewster is a web developer and contractor in the finance industry and cocktail making enthusiast">
+    <meta name="subject" content="Cocktails, Code, Photos and Opinion">
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google-site-verification" content="w7YZGh_BpvwXJYukVGLh6KQPPGpdT42N1Bi0eH6YZvw">
+    <meta name="category" content="">
+    <meta name="abstract" content="Personal blog site for Steven Fewster">
+    <meta name="topic" content="Cocktails and Code">
+    <meta name="summary" content="Steven Fewster is a front end developer with over 15 years of experience of javascript and associated technologies, and an unhealthy interest in making cocktails">
+    <meta name="url" content="http://stevenfewster.com/">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="ICBM" content="51.3937930,-0.4155300">
+    <meta name="geo.position" content="51.3937930;-0.4155300">
+    <meta name="geo.region" content="GB">
+    <meta name="geo.placename" content="London">
+    <link href="/pages/about-me" rel="author">
+</head>
