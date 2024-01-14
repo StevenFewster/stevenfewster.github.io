@@ -1,18 +1,10 @@
 ---
-import type { HTMLAttributes } from "astro/types";
-
-type Props = HTMLAttributes<"a">;
-
-const { href, ...props } = Astro.props;
-
-const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, "");
----
+const { href } = Astro.props;
+---ƒ
 
 <a
   class="mx-3 text-gray-500 before:block before:absolute before:-inset-1 before:-skew-y-2 before:-skew-x-1 before:hover:bg-wedgewood-400 hover:text-white relative inline-block"
   href={href}
-  {...props}>
-  <span class="relative "><slot /></span>
+>
+  <span class="relative"><slot /></span>
 </a>
-
