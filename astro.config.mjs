@@ -8,5 +8,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://stevenfewster.com',
   output: 'static',
+  trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()]
 });
