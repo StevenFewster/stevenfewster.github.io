@@ -4,6 +4,7 @@ import FormattedDate from "./FormattedDate.astro";
 import { Image } from "astro:assets";
 
 const {post, hideCategory} = Astro.props;
+post.slug+='/';
 if (!post.data.cover || !post.data.cover.src) {
   console.log(Astro.props)
 }
