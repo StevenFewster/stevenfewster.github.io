@@ -4,7 +4,6 @@ import FormattedDate from "./FormattedDate.astro";
 import { Image } from "astro:assets";
 
 const {post, hideCategory} = Astro.props;
-post.slug+='/';
 if (!post.data.cover || !post.data.cover.src) {
   console.log(Astro.props)
 }
@@ -12,7 +11,7 @@ const coverAlt = 'Cover image for ' + post.data.title.replace('-', '')
 
 ---
 <div class="p-4 lg:w-1/2 w-full">
-    <div class="flex p-4 bg-wedgewood-50">
+    <div class="flex p-4 bg-wedgewood-50 h-full">
       <div class="h-24 w-16 mr-4 inline-flex flex-shrink-0">
         <Image  src={post.data.cover} class="object-cover object-center" width=64 height=96 decoding="async" loading="lazy" alt={coverAlt} />
       </div>

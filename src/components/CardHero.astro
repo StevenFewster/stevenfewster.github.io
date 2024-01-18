@@ -10,7 +10,9 @@ const { post } = Astro.props;
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:px-12 md:px-16 flex flex-col md:items-start md:text-left items-center text-center">
       <CategoryLink post={post} />
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{ post.data.title }</h1>
+      <a href={post.slug} >
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">{ post.data.title }</h1>
+      </a>
       <p class="mb-8 leading-relaxed">{ post.data.description }</p>
     </div>
   </div>
