@@ -12,7 +12,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 <a
   class="mx-3 text-gray-500 before:block before:absolute before:-inset-1 before:-skew-y-2 before:-skew-x-1 before:hover:bg-wedgewood-400 hover:text-white relative inline-block"
   href={href}
-  class:list={[className, { active: isActive }]}
+  class:list={[className, { 'before:border-dotted before:border before:border-wedgewood-400 before:hover:bg-none before:hover:text-gray-500': isActive }]}
   {...props}>
   <span class="relative "><slot /></span>
 </a>
