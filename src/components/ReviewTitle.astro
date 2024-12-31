@@ -1,7 +1,6 @@
 ---
-import SourceAttr from "../components/SourceAttr.astro";
 import FormattedDate from "./FormattedDate.astro";
-import Rating from "./rating.astro";
+import Rating from "./Rating.astro";
 
 let { title, date, updatedDate, attr, cover, meta } = Astro.props;
 const sourceLink = (attr && attr.sourceLink) || "";
