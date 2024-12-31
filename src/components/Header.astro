@@ -2,7 +2,10 @@
 import HeaderLink from './HeaderLink.astro';
 import SocialLinks from './SocialLinks.astro';
 import { SITE_TITLE } from '../consts';
-
+const hide = {
+	twitter: true,
+	rss: true
+}
 ---
 <header class="text-gray-600 body-font container mx-auto flex flex-wrap py-3 md:p-5 flex-col md:flex-row items-center">
 	  <a  href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -15,8 +18,8 @@ import { SITE_TITLE } from '../consts';
 		<HeaderLink href="/cocktails/">Cocktails</HeaderLink>
 		<HeaderLink href="/editorials/">Editorials</HeaderLink>
 	  </nav>
-	  <div style="min-width: 182px">
-		<SocialLinks />
+	  <div style="min-width: 182px" class="flex justify-end">
+		<SocialLinks hide={ hide } />
 	  </div>
   </header>
 

@@ -10,8 +10,11 @@ import CardBase from "../components/CardBase.astro";
 import CardHero from "../components/CardHero.astro";
 import CardLong from "../components/CardLong.astro";
 
-const posts = (await getCollection("BlogPosts"))
-.filter((item) => item.data.category !== Category.draft)
+const posts = (
+  await getCollection("BlogPosts", ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  })
+)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .reduce((prev, curr) => {
     if (curr.data.category === Category.cocktails) {
@@ -28,7 +31,11 @@ const posts = (await getCollection("BlogPosts"))
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} category="Cocktails and Code" />
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      category="Cocktails and Code"
+    />
   </head>
   <body>
     <Header />
@@ -38,7 +45,7 @@ const posts = (await getCollection("BlogPosts"))
           posts.all.map((post: any, i: number) => {
             if (i == 0) {
               return <CardHero post={post} />;
-			} else if (i > 0 && i < 4) {
+            } else if (i > 0 && i < 4) {
               return <CardLong post={post} />;
             } else {
               return <CardBase post={post} />;

@@ -1,6 +1,13 @@
+---
+const { hide } = Astro.props;
+---
 <span
-  class="hidden md:inline-flex md:ml-auto sm:mt-0 mt-4 justify-end sm:justify-end w-logo"
-  ><a href="https://github.com/StevenFewster" class="text-gray-500 hover:text-white hover:bg-black border-solid border-2 border-white rounded-full hover:border-black" title="github">
+  class="hidden md:inline-flex md:ml-auto sm:mt-0 mt-4 justify-end sm:justify-end">
+  { !(hide && hide.github) && 
+  <a
+    href="https://github.com/StevenFewster"
+    class="text-gray-500 hover:text-white hover:bg-black border-solid border-2 border-white rounded-full hover:border-black h-6"
+    title="github">
     <svg
       fill="currentColor"
       stroke-linecap="round"
@@ -13,7 +20,13 @@
       ></path></svg
     >
   </a>
-  <a href="https://twitter.com/stevenfewster" class="ml-3 text-gray-500 hover:text-blue-400 border-2 border-white" title="twitter">
+  } 
+  { !(hide && hide.twitter) && 
+  <a
+    href="https://twitter.com/stevenfewster"
+    class="ml-3 text-gray-500 hover:text-blue-400 border-2 border-white h-6"
+    title="twitter"
+  >
     <svg
       fill="currentColor"
       stroke-linecap="round"
@@ -27,7 +40,13 @@
       ></path>
     </svg>
   </a>
-  <a href="https://www.linkedin.com/in/stevenfewster/" class="ml-3 text-gray-500 rounded-sm hover:text-white hover:bg-blue-600 hover:border-blue-600 border-2 border-white" title="linkedin">
+  } 
+  { !(hide && hide.linkedin) && 
+  <a
+    href="https://www.linkedin.com/in/stevenfewster/"
+    class="ml-3 text-gray-500 rounded-sm hover:text-white hover:bg-blue-600 hover:border-blue-600 border-2 border-white h-6"
+    title="linkedin"
+  >
     <svg
       fill="currentColor"
       stroke="currentColor"
@@ -44,4 +63,17 @@
       <circle cx="4" cy="4" r="2" stroke="none"></circle>
     </svg>
   </a>
+  } 
+  { !(hide && hide.rss) && 
+  <a
+    href="/rss.xml"
+    class="ml-2 text-gray-500 hover:text-white hover:bg-orange-500 border-solid border-2 border-white rounded hover:border-orange-500 h-6"
+    title="rss feed">
+    <svg xmlns="http://www.w3.org/2000/svg"
+    class="w-5 h-5 p-1"
+      viewBox="-28.364 -29.444 42.324 42.822">
+        <path fill="currentColor" d="M-17.392 7.875c0 3.025-2.46 5.485-5.486 5.485s-5.486-2.46-5.486-5.485c0-3.026 2.46-5.486 5.486-5.486s5.486 2.461 5.486 5.486zm31.351 5.486C14.042.744 8.208-11.757-1.567-19.736c-7.447-6.217-17.089-9.741-26.797-9.708v9.792C-16.877-19.785-5.556-13.535.344-3.66a32.782 32.782 0 0 1 4.788 17.004h8.827v.017zm-14.96 0C-.952 5.249-4.808-2.73-11.108-7.817c-4.821-3.956-11.021-6.184-17.255-6.15v8.245c6.782-.083 13.432 3.807 16.673 9.774a19.296 19.296 0 0 1 2.411 9.326h8.278v-.017z"/>
+      </svg>
+  </a>
+  }
 </span>

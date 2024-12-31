@@ -1,0 +1,47 @@
+---
+import SourceAttr from "../components/SourceAttr.astro";
+import FormattedDate from "./FormattedDate.astro";
+import Rating from "./rating.astro";
+
+let { title, date, updatedDate, attr, cover, meta } = Astro.props;
+const sourceLink = (attr && attr.sourceLink) || "";
+const sourceName = (attr && attr.sourceName) || "";
+const siteLink = (attr && attr.siteLink) || "";
+const siteName = (attr && attr.siteName) || "";
+if (title.indexOf(" ") > -1) {
+  let arr = title.split("").reverse();
+  arr[arr.indexOf(" ")] = " ";
+  title = arr.reverse().join("");
+}
+---
+
+<div class="title">
+  <h1 class="text-center text-3xl">
+    {title}
+  </h1>
+  <div class="date text-right">
+    <FormattedDate date={date} />
+    {
+      updatedDate && (
+        <div class="last-updated-on">
+          Last updated on <FormattedDate date={updatedDate} />
+        </div>
+      )
+    }
+  </div>
+  <div class="not-prose flex">
+    <div class="hero-image">
+      {cover && <img width={255} height={385} src={cover.src} alt="" />}
+    </div>
+    <aside class="px-5">
+      <label class="text-xs text-gray-400">Title (Year)</label>
+      <p>{title} ({meta.year})</p>
+      <label class="text-xs text-gray-400">Author</label>
+      <p>{meta.author}</p>
+      <label class="text-xs text-gray-400">Genre</label>
+      <p>{meta.type}</p>
+      <label class="text-xs text-gray-400">Rating</label>
+      <Rating rating={meta.rating} />
+    </aside>
+  </div>
+</div>

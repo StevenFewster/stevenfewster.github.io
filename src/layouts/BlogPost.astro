@@ -3,16 +3,15 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import CategoryLink from '../components/CategoryLink.astro';
-import SourceAttr from '../components/SourceAttr.astro';
-import { Image, getImage } from 'astro:assets';
-import type { UnresolvedImageTransform } from 'astro';
+import ArticleTitle from '../components/ArticleTitle.astro';
+import ReviewTitle from '../components/ReviewTitle.astro';
+import { getImage } from 'astro:assets';
 
 type Props = CollectionEntry<'BlogPosts'>['data'];
 
-const { title, description, date, updatedDate, category, attr } = Astro.props;
-let cover: any;
+const { title, description, type, meta, date, updatedDate, category, attr } = Astro.props;
+let cover;
 if (Astro.props.cover) {
 	cover = await getImage({
 		src: Astro.props.cover,
@@ -20,10 +19,6 @@ if (Astro.props.cover) {
 		height: 510
 	});
 }
-const sourceLink = attr && attr.sourceLink || '';
-const sourceName = attr && attr.sourceName || '';
-const siteLink = attr && attr.siteLink || '';
-const siteName = attr && attr.siteName || '';
 ---
 
 <html lang="en">
@@ -39,23 +34,10 @@ const siteName = attr && attr.siteName || '';
 					<CategoryLink post={ { data: Astro.props }} />
 				</div>
 				<div class="container mx-auto prose lg:prose-xl px-3">
-					<div class="title">
-						<h1 class="text-3xl text-center">{title}</h1>
-						<div class="date text-right">
-							<FormattedDate date={date} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<div class="hero-image">
-							{ cover && <img width={1020} height={510} src={cover.src} alt="" /> }
-							{ attr && <SourceAttr {sourceLink} {sourceName} {siteLink} {siteName} /> }
-						</div>
-					</div>
+					{ type && type == 'Book Review' &&
+						<ReviewTitle {...Astro.props } {cover} /> }
+					{ (!type || type != 'Book Review') &&
+						<ArticleTitle {...Astro.props } {cover} /> }
 					<slot />
 				</div>
 			</article>
