@@ -17,7 +17,7 @@ imageClass += ['Book', 'Book Review'].includes(post.data.type) ?
               <CategoryLink post={post} />
               
               <a href={post.slug} class="text-gray-900 hover:underline hover:text-wedgewood-500">
-              <h1 class="title-font text-lg font-medium mb-3">{ post.data.title }{ post.data.type }</h1>
+              <h1 class="title-font text-lg font-medium mb-3">{ post.data.title }</h1>
               </a>
               <p class="leading-relaxed mb-3 flex-grow-1">{ post.data.description }</p>
               <p class="text-right mt-auto">
