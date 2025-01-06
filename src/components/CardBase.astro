@@ -3,26 +3,38 @@ import CategoryLink from "./CategoryLink.astro";
 import FormattedDate from "./FormattedDate.astro";
 import { Image } from "astro:assets";
 
-const {post, hideCategory} = Astro.props;
+const { post, hideCategory } = Astro.props;
 if (!post.data.cover || !post.data.cover.src) {
-  console.log(Astro.props)
+  console.log(Astro.props);
 }
-const coverAlt = 'Cover image for ' + post.data.title.replace('-', '')
-
+const coverAlt = "Cover image for " + post.data.title.replace("-", "");
 ---
-<div class="p-4 lg:w-1/2 w-full">
-    <div class="flex p-4 bg-wedgewood-50 h-full">
-      <div class="h-24 w-16 mr-4 inline-flex flex-shrink-0">
-        <Image  src={post.data.cover} class="object-cover object-center" width=64 height=96 decoding="async" loading="lazy" alt={coverAlt} />
-      </div>
-      <div class="flex-grow">
-        { !hideCategory && <CategoryLink post={post} /> }
-        <a href={post.slug} class="text-gray-900 hover:underline hover:text-wedgewood-900">
-          <h2 class="text-lg title-font font-medium">{ post.data.title }</h2>
-        </a>
-          <p class="leading-relaxed text-base mb-3">{ post.data.description }</p>
-        <p class="text-right">
-          <FormattedDate date={post.data.date} />
-        </p>
-      </div>
+
+<div class="w-full p-4 lg:w-1/2">
+  <div class="flex h-full bg-wedgewood-50 p-4">
+    <div class="mr-4 inline-flex h-24 w-16 flex-shrink-0">
+      <Image
+        src={post.data.cover}
+        class="object-cover object-center"
+        width="64"
+        height="96"
+        decoding="async"
+        loading="lazy"
+        alt={coverAlt}
+      />
     </div>
+    <div class="flex flex-grow flex-col">
+      {!hideCategory && <CategoryLink post={post} />}
+      <a
+        href={post.slug}
+        class="text-gray-900 hover:text-wedgewood-900 hover:underline"
+      >
+        <h2 class="title-font text-lg font-medium">{post.data.title}</h2>
+      </a>
+      <p class="mb-3 grow text-base leading-relaxed">{post.data.description}</p>
+      <p class="text-right">
+        <FormattedDate date={post.data.date} />
+      </p>
+    </div>
+  </div>
+</div>
