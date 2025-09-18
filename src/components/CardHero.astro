@@ -19,7 +19,7 @@ imageClass += ['Book', 'Book Review'].includes(post.data.type) ?
         post.data.cover && <Image class={ imageClass } src={ post.data.cover } height=341 alt="blog" />
       }
       <div
-        class="lg:grow h-80 flex w-full flex-col items-center text-center md:w-1/2 md:items-start md:px-4 md:py-4 md:text-left lg:px-12"
+        class="lg:grow h-80 flex w-full flex-col items-center text-center md:w-1/2 md:items-start md:px-4 md:py-4 md:text-left lg:px-12 "
       >
         <CategoryLink post={post} />
         <a
