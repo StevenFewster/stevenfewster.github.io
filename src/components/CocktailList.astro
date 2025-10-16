@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+const { items } = Astro.props;
+---
+
+<section class="sf-carousel">
+  {
+    items.map((item: any, i: number) => {
+      const coverAlt = "Cover image for " + item.data.title.replace("-", "");
+      return (
+          <div class="sf-carousel-card h-192 w-320 px-4 relative overflow-hidden contrast-50 grayscale transition duration-300 ease-in-out hover:contrast-100 hover:grayscale-0">
+            
+        <a href={item.slug}>
+            <Image
+              src={item.data.cover}
+              class="h-192 w-320 w-full object-cover h-full object-top block absolute inset-0"
+              width="320"
+              height="192"
+              decoding="async"
+              loading="lazy"
+              alt={coverAlt}
+            />
+            <div class="relative z-10 w-full text-center">
+              <h2 class="title-font mb-2 text-2xl font-medium text-gray-900 bg-white bg-opacity-80 inline-block px-4">
+                {item.data.title}
+              </h2>
+            </div>
+        </a>
+          </div>
+          
+          
+      );
+    })
+  }
+</section>
+
+<div class="mb-8 mt-8 w-full border-t border-gray-200"></div>

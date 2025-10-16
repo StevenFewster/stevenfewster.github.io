@@ -1,3 +1,7 @@
+:root {
+    --primary-color: rgb(95 170 177);
+}
+
 .w-logo {
     min-width: 185px;
 }
@@ -7,4 +11,83 @@
     linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee);
     background-size: 16px 16px;
     background-position: 0 0, 8px 8px;
+}
+
+.sf-carousel {
+    width: calc(100% - 60px);
+    overflow-x:auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+.sf-carousel::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    width: 100%;
+}
+.sf-carousel::-webkit-scrollbar {
+    display: none;
+}
+.sf-carousel::scroll-button(right),
+.sf-carousel::scroll-button(left)  {
+    content: '→';
+    border: none;
+    background-color: var(--primary-color);
+    font-family: Consolas, monaco, monospace;
+    font-size: 3rem;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: 0.3em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: right center;
+    translate: -50%;
+}
+.sf-carousel::scroll-button(left) {
+    transform: rotate(180deg);
+    position-area: left center;
+    translate: 50%;
+}
+.sf-carousel::scroll-button(right):disabled,
+.sf-carousel::scroll-button(left):disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+
+.sf-carousel-card {
+    scroll-snap-align: start;
+    flex: 0 0 20em;
+    aspect-ratio: 5 / 3;
+    height: 12em;
+    background-color: rgb(229 231 235);
+    border-radius: 0.5em;
+    text-align: center;
+    align-content: center;
+}
+.sf-carousel-card::scroll-marker {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.15;
+}
+.sf-carousel-card::scroll-marker:target-current {
+    opacity: 1;
+}
+
+@media(max-width: 500px) {
+    .sf-carousel-card {
+        flex: 0 0 100%
+    }
 }
