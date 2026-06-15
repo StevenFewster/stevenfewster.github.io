@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Logo for stevenfewster.com website Steven Fewster" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Logo for stevenfewster.com website" [ref=e4]
+      - generic [ref=e5]: Steven Fewster
+    - navigation [ref=e6]:
+      - link "Code" [ref=e7] [cursor=pointer]:
+        - /url: /code/
+      - link "Projects" [ref=e8] [cursor=pointer]:
+        - /url: /projects/
+      - link "Cocktails" [ref=e9] [cursor=pointer]:
+        - /url: /cocktails/
+      - link "Editorials" [ref=e10] [cursor=pointer]:
+        - /url: /editorials/
+    - generic [ref=e12]:
+      - link "github" [ref=e13] [cursor=pointer]:
+        - /url: https://github.com/StevenFewster
+        - img [ref=e14]
+      - link "linkedin" [ref=e16] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/stevenfewster/
+        - img [ref=e17]
+  - main [ref=e20]:
+    - article [ref=e21]:
+      - heading "cocktails" [level=2] [ref=e23]:
+        - link "cocktails" [ref=e24] [cursor=pointer]:
+          - /url: /cocktails
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "A is for Apricot Sour" [level=1] [ref=e27]
+          - time [ref=e29]: Jun 28, 2013
+        - paragraph [ref=e31]:
+          - text: Quite some time ago I was introduced by
+          - link "Bob from the Trinity" [ref=e32] [cursor=pointer]:
+            - /url: http://www.trinity-bar.com/
+          - text: to
+          - link "Difford’s Cocktail Guide" [ref=e33] [cursor=pointer]:
+            - /url: http://www.amazon.co.uk/dp/0955627621
+          - text: . A battered version 7 of the book, it tweaked my interest and I have since bought version 8 and more recently version 10 (version 8 having had an accident with some exuberant friends of my better half).
+        - paragraph [ref=e34]: I can’t recommend it highly enough but I thought I might pay homage to it by working my way through the book doing one letter of the alphabet each time and giving you my oh-so-invaluable insights. Also something else to put on here rather than the rather dry computing references.
+        - paragraph [ref=e35]: One, not problem per se, but feature of the book is it’s really quite specific references to particular brands. Thanks to an ex colleague moving to Canada I managed to inherit a fairly substantial collection of spirits to add to my own, so I beg your forgiveness for liberties taken with ingredients. This first one, for example, I have substituted Bulleit Bourbon for Maker’s Mark.
+        - paragraph [ref=e36]: Here laid out are all the ingredients. Proper planning prevents poor performance. That line would have been better under whatever it is I end up making for P.
+        - paragraph [ref=e37]:
+          - img "Apricot Sours Ingredients" [ref=e38]
+        - paragraph [ref=e39]: And here is the final result. Not particularly evenly poured. I went for this one as it caught my eye flicking through for it’s use of apricot jam.
+        - paragraph [ref=e40]:
+          - img "Apricot Sour" [ref=e41]
+        - paragraph [ref=e42]: "## The Verdict"
+        - paragraph [ref=e43]: "I quite liked it. It was very sweet but the bourbon gave it a nice edge. Emma’s comment:"
+        - blockquote [ref=e44]:
+          - paragraph [ref=e45]: it was alright but I wouldn’t rush to have another.
+        - paragraph [ref=e46]: Had to finish hers for her. Altruism at its finest. I might come back and give these ratings at a later date.
+  - contentinfo [ref=e47]:
+    - generic [ref=e48]:
+      - paragraph [ref=e49]:
+        - link "Logo for stevenfewster.com website ©2026" [ref=e50] [cursor=pointer]:
+          - /url: /
+          - img "Logo for stevenfewster.com website" [ref=e51]
+          - text: ©2026
+      - generic [ref=e52]:
+        - link "About" [ref=e53] [cursor=pointer]:
+          - /url: /about/
+        - link "Contact" [ref=e54] [cursor=pointer]:
+          - /url: /contact/
+      - generic [ref=e56]:
+        - link "github" [ref=e57] [cursor=pointer]:
+          - /url: https://github.com/StevenFewster
+          - img [ref=e58]
+        - link "twitter" [ref=e60] [cursor=pointer]:
+          - /url: https://twitter.com/stevenfewster
+          - img [ref=e61]
+        - link "linkedin" [ref=e63] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/stevenfewster/
+          - img [ref=e64]
+        - link "rss feed" [ref=e67] [cursor=pointer]:
+          - /url: /rss.xml
+          - img [ref=e68]

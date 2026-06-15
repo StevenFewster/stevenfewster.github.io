@@ -23,7 +23,7 @@ imageClass += ['Book', 'Book Review'].includes(post.data.type) ?
       >
         <CategoryLink post={post} />
         <a
-          href={post.slug}
+          href={post.id.replace(/\.(md|mdx)$/, "")}
           class="text-gray-900 hover:text-wedgewood-900 hover:underline"
         >
           <h1 class="title-font mb-4 text-3xl font-medium sm:text-4xl">

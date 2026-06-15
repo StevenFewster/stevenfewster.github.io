@@ -1,0 +1,196 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Logo for stevenfewster.com website Steven Fewster" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Logo for stevenfewster.com website" [ref=e4]
+      - generic [ref=e5]: Steven Fewster
+    - navigation [ref=e6]:
+      - link "Code" [ref=e7] [cursor=pointer]:
+        - /url: /code/
+      - link "Projects" [ref=e8] [cursor=pointer]:
+        - /url: /project-list/
+      - link "Cocktails" [ref=e9] [cursor=pointer]:
+        - /url: /cocktails/
+      - link "Editorials" [ref=e10] [cursor=pointer]:
+        - /url: /editorials/
+    - generic [ref=e12]:
+      - link "github" [ref=e13] [cursor=pointer]:
+        - /url: https://github.com/StevenFewster
+        - img [ref=e14]
+      - link "linkedin" [ref=e16] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/stevenfewster/
+        - img [ref=e17]
+  - main [ref=e20]:
+    - heading "Project List" [level=1] [ref=e22]
+    - generic [ref=e25]:
+      - generic [ref=e28]:
+        - generic [ref=e29] [cursor=pointer]:
+          - radio "Complete" [ref=e30]
+          - paragraph [ref=e34]: Complete
+        - generic [ref=e35] [cursor=pointer]:
+          - radio "In Progress" [checked] [ref=e36]
+          - paragraph [ref=e40]: In Progress
+        - generic [ref=e41] [cursor=pointer]:
+          - radio "Not Started" [ref=e42]
+          - paragraph [ref=e46]: Not Started
+        - generic [ref=e47] [cursor=pointer]:
+          - radio "Paused" [ref=e48]
+          - paragraph [ref=e52]: Paused
+      - generic [ref=e53]: In Progress
+      - generic [ref=e54]:
+        - heading "6 Job List App Not Started" [level=1] [ref=e55]
+        - heading "A job application management tool" [level=3] [ref=e56]
+        - paragraph [ref=e57]: An application to manage and track job applications, including features for adding, editing, and deleting job entries, as well as categorizing them by status, and adding phases.
+        - generic [ref=e58]:
+          - generic [ref=e59]: app
+          - generic [ref=e60]: django
+          - generic [ref=e61]: vuejs
+          - generic [ref=e62]: volt
+          - generic [ref=e63]: tailwindcss
+          - generic [ref=e64]: primereact
+          - generic [ref=e65]: postgresql
+          - generic [ref=e66]: docker
+      - generic [ref=e67]:
+        - heading "2 To-Do List App In Progress" [level=1] [ref=e68]
+        - heading "Simple ToDo List to learn Django" [level=3] [ref=e69]
+        - paragraph [ref=e70]: Nothing fancy, just a simple ToDo List application to learn Django. Force completion and deployment.
+        - generic [ref=e71]:
+          - generic [ref=e72]: app
+          - generic [ref=e73]: django
+          - generic [ref=e74]: react
+          - generic [ref=e75]: docker
+      - generic [ref=e76]:
+        - heading "3 Actualiti Company Website In Progress" [level=1] [ref=e77]
+        - heading "A company website for Actualiti" [level=3] [ref=e78]
+        - paragraph [ref=e79]: A website for Actualiti to showcase their services, projects, and team. It will include sections for about the company, services, projects, team, and contact information.
+        - generic [ref=e80]:
+          - generic [ref=e81]: website
+          - generic [ref=e82]: html
+          - generic [ref=e83]: css
+          - generic [ref=e84]: javascript
+          - generic [ref=e85]: astro
+          - generic [ref=e86]: tailwindcss
+      - generic [ref=e87]:
+        - heading "4 Scanalog Stalled" [level=1] [ref=e88]
+        - heading "Capturing physical DVD collections in a digital format" [level=3] [ref=e89]
+        - paragraph [ref=e90]: An application to digitize and organize physical DVD collections. Users can scan their DVDs, add metadata, and manage their digital library. Maybe pivot on development platform to Expo
+        - generic [ref=e91]:
+          - generic [ref=e92]: app
+          - generic [ref=e93]: flutter
+          - generic [ref=e94]: serverpod
+          - generic [ref=e95]: expo
+      - generic [ref=e96]:
+        - heading "0 Sweepstake Website Complete" [level=1] [ref=e97]
+        - heading "A personal website for managing sweepstakes" [level=3] [ref=e98]
+        - paragraph [ref=e99]: A website to manage and participate in sweepstakes. Users can enter sweepstakes, view results, and manage their entries. Backendless, data fetched and scores computed by TypeScript, automatically using github actions to run on a schedule. Frontend built with React, TailwindCSS, and DaisyUI.
+        - generic [ref=e100]:
+          - generic [ref=e101]: website
+          - generic [ref=e102]: html
+          - generic [ref=e103]: css
+          - generic [ref=e104]: javascript
+          - generic [ref=e105]: react
+          - generic [ref=e106]: tailwindcss
+          - generic [ref=e107]: daisyui
+          - generic [ref=e108]: vibe coded
+          - generic [ref=e109]: github actions
+      - generic [ref=e110]:
+        - heading "1 This Project List Page In Progress" [level=1] [ref=e111]
+        - heading "A personal project list page to track and organise my projects" [level=3] [ref=e112]
+        - paragraph [ref=e113]: A personal project list page to track and organise my projects. Keep track of what I've started, in progress, and completed.
+        - generic [ref=e114]:
+          - generic [ref=e115]: website
+          - generic [ref=e116]: html
+          - generic [ref=e117]: css
+          - generic [ref=e118]: javascript
+          - generic [ref=e119]: vuejs
+          - generic [ref=e120]: tailwindcss
+      - generic [ref=e121]:
+        - heading "7 Big Data PoC Paused" [level=1] [ref=e122]
+        - heading "A proof of concept for big data processing client-side" [level=3] [ref=e123]
+        - paragraph [ref=e124]: A proof of concept project to explore big data processing techniques and technologies. It will include experiments with data ingestion, processing, and visualization.
+        - generic [ref=e125]:
+          - generic [ref=e126]: project
+          - generic [ref=e127]: big data
+          - generic [ref=e128]: python
+          - generic [ref=e129]: fastapi
+          - generic [ref=e130]: angular
+          - generic [ref=e131]: echarts
+          - generic [ref=e132]: DuckDB+WASM
+          - generic [ref=e133]: web workers
+      - generic [ref=e134]:
+        - heading "8 ngx-zod-interceptor In Progress" [level=1] [ref=e135]
+        - heading "Library for validating Angular HTTP requests and responses using Zod schemas" [level=3] [ref=e136]
+        - paragraph [ref=e137]: A library for validating Angular HTTP requests and responses using Zod schemas. It provides a simple and type-safe way to ensure data integrity in your Angular applications.
+        - generic [ref=e138]:
+          - generic [ref=e139]: library
+          - generic [ref=e140]: angular
+          - generic [ref=e141]: typescript
+          - generic [ref=e142]: zod
+      - generic [ref=e143]:
+        - heading "9 Recipe Book Companion Box Not Started" [level=1] [ref=e144]
+        - heading "Needs a snappier name, but it's a companion box of herbs/spices" [level=3] [ref=e145]
+        - paragraph [ref=e146]: Avoid the frustration of missing ingredients with this companion box of herbs and spices, nicely packaged for convenience. Ideal gift. Needs to scrape book, find all ingredients, provide some of the harder to find ones.
+        - generic [ref=e147]:
+          - generic [ref=e148]: website
+          - generic [ref=e149]: ecommerce
+          - generic [ref=e150]: ai
+      - generic [ref=e151]:
+        - heading "10 Goal Setting App Not Started" [level=1] [ref=e152]
+        - heading "An app to help users set and achieve their goals" [level=3] [ref=e153]
+        - paragraph [ref=e154]: Uses AI to help users set long term goals, break them down into smaller tasks, and track their progress. It will include features for setting deadlines, reminders, and providing motivational content. Could also include a social aspect for sharing goals and progress with friends. Could also include a journaling feature for reflecting on progress and challenges.
+        - generic [ref=e155]:
+          - generic [ref=e156]: app
+          - generic [ref=e157]: ai
+      - generic [ref=e158]:
+        - heading "11 Personal Finance Dashboard (DEMO) Not Started" [level=1] [ref=e159]
+        - heading "A dashboard to track and manage personal finances" [level=3] [ref=e160]
+        - paragraph [ref=e161]: Practice/Example application. Help users track and manage their personal finances, find savings, upload data from supermarket shop, multiple back accounts and classifications.
+        - generic [ref=e162]:
+          - generic [ref=e163]: app
+          - generic [ref=e164]: ai
+      - generic [ref=e165]:
+        - heading "12 Cranky Hippo Not Started" [level=1] [ref=e166]
+        - heading "Local Events Aggregator and Publisher" [level=3] [ref=e167]
+        - paragraph [ref=e168]: An application to aggregate and publish local events, providing users with up-to-date information on what's happening in their area. It could include features for event discovery, categorization, and notifications. Users can scan and have read flyers etc.
+        - generic [ref=e169]:
+          - generic [ref=e170]: app
+          - generic [ref=e171]: website
+          - generic [ref=e172]: ai
+  - contentinfo [ref=e173]:
+    - generic [ref=e174]:
+      - paragraph [ref=e175]:
+        - link "Logo for stevenfewster.com website ©2026" [ref=e176] [cursor=pointer]:
+          - /url: /
+          - img "Logo for stevenfewster.com website" [ref=e177]
+          - text: ©2026
+      - generic [ref=e178]:
+        - link "About" [ref=e179] [cursor=pointer]:
+          - /url: /about/
+        - link "Contact" [ref=e180] [cursor=pointer]:
+          - /url: /contact/
+      - generic [ref=e182]:
+        - link "github" [ref=e183] [cursor=pointer]:
+          - /url: https://github.com/StevenFewster
+          - img [ref=e184]
+        - link "twitter" [ref=e186] [cursor=pointer]:
+          - /url: https://twitter.com/stevenfewster
+          - img [ref=e187]
+        - link "linkedin" [ref=e189] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/stevenfewster/
+          - img [ref=e190]
+        - link "rss feed" [ref=e193] [cursor=pointer]:
+          - /url: /rss.xml
+          - img [ref=e194]
+  - generic [ref=e198]:
+    - button "Menu" [ref=e199]:
+      - img [ref=e201]
+      - generic: Menu
+    - button "Inspect" [ref=e205]:
+      - img [ref=e207]
+      - generic: Inspect
+    - button "Audit" [ref=e209]:
+      - img [ref=e211]
+      - generic: Audit
+    - button "Settings" [ref=e214]:
+      - img [ref=e216]
+      - generic: Settings

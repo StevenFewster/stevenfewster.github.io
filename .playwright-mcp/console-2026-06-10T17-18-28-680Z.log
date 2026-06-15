@@ -1,0 +1,8 @@
+[       2ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep) @ http://localhost:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[      26ms] [ERROR] WebSocket connection to 'ws://localhost:4321/?token=dGWDxzLZc_LQ' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://localhost:4321/@vite/client:1478
+[      38ms] [ERROR] WebSocket connection to 'ws://localhost:4321/?token=dGWDxzLZc_LQ' failed: Error during WebSocket handshake: Unexpected response code: 400 @ http://localhost:4321/@vite/client:1488
+[      38ms] [ERROR] [vite] failed to connect to websocket.
+your current setup:
+  (browser) localhost:4321/ <--[HTTP]--> localhost:4321/ (server)
+  (browser) localhost:4321/ <--[WebSocket (failing)]--> localhost:4321/ (server)
+Check out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr . @ http://localhost:4321/@vite/client:1498

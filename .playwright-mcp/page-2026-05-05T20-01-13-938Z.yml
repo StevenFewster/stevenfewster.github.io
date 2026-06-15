@@ -1,0 +1,69 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Logo for stevenfewster.com website Steven Fewster" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Logo for stevenfewster.com website" [ref=e4]
+      - generic [ref=e5]: Steven Fewster
+    - navigation [ref=e6]:
+      - link "Code" [ref=e7] [cursor=pointer]:
+        - /url: /code/
+      - link "Projects" [ref=e8] [cursor=pointer]:
+        - /url: /projects/
+      - link "Cocktails" [ref=e9] [cursor=pointer]:
+        - /url: /cocktails/
+      - link "Editorials" [ref=e10] [cursor=pointer]:
+        - /url: /editorials/
+    - generic [ref=e12]:
+      - link "github" [ref=e13] [cursor=pointer]:
+        - /url: https://github.com/StevenFewster
+        - img [ref=e14]
+      - link "linkedin" [ref=e16] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/stevenfewster/
+        - img [ref=e17]
+  - main [ref=e20]:
+    - article [ref=e21]:
+      - heading "cocktails" [level=2] [ref=e23]:
+        - link "cocktails" [ref=e24] [cursor=pointer]:
+          - /url: /cocktails
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "J is for Julep" [level=1] [ref=e27]
+          - time [ref=e29]: Aug 5, 2014
+        - paragraph [ref=e31]: This sounded like it would be very refreshing but I essentially ended up doing an Alan Partridge with my free-wheeling antics.
+        - paragraph [ref=e32]: This can apparently be made with pretty much any spirit but as I have recently acquired some Jenson’s Old Tom Gin, which is a sweeter version of standard gins, I decided to make mine using that. The key ingredients of a Julep is mint, in our case home grown, from the garden and rather weedy looking; and a shed-load of crushed ice.
+        - paragraph [ref=e33]: As I had time on my hands I was able to do the recommended method of lightly muddling the mint and spirit in the cocktail shaker and leave it in the fridge for a few hours along with the highball glass that I was going to serve it in.
+        - heading "The ingredients" [level=2] [ref=e34]
+        - paragraph [ref=e35]:
+          - img "Julep Ingredients, all in a row" [ref=e36]
+        - paragraph [ref=e37]: Then, having shaken it up with some uncrushed ice, pour it over the crushed ice – a swirl with the bar spoon – and then more crushed ice.
+        - heading "The result" [level=2] [ref=e38]
+        - paragraph [ref=e39]:
+          - img "Julep, mixed up and ready to go" [ref=e40]
+        - heading "The verdict" [level=2] [ref=e41]
+        - paragraph [ref=e42]: As you can see, that’s a lot of ice for not much liquid. I probably did something wrong. I had a quick sip and the mint and gin worked well together but not having any straws (an oversight I really need to correct) it wasn’t exactly practical to drink. It also would have been a lot nicer in the blazing sun of a week or two ago as opposed to the evening following a bit of a drizzly day. It probably would be better with a verandah to sit on too!
+        - paragraph [ref=e43]: As it was, I ended up topping up with some Indian tonic water to make it in to a longer drink, and essentially a slightly more elaborate pink gin and tonic. Which was lovely! Looking forward to trying some of the other Botanical Gin that I picked up and having a go at an Elderflower Tom Collins, which I might shoe-horn in to “T”.
+  - contentinfo [ref=e44]:
+    - generic [ref=e45]:
+      - paragraph [ref=e46]:
+        - link "Logo for stevenfewster.com website ©2026" [ref=e47] [cursor=pointer]:
+          - /url: /
+          - img "Logo for stevenfewster.com website" [ref=e48]
+          - text: ©2026
+      - generic [ref=e49]:
+        - link "About" [ref=e50] [cursor=pointer]:
+          - /url: /about/
+        - link "Contact" [ref=e51] [cursor=pointer]:
+          - /url: /contact/
+      - generic [ref=e53]:
+        - link "github" [ref=e54] [cursor=pointer]:
+          - /url: https://github.com/StevenFewster
+          - img [ref=e55]
+        - link "twitter" [ref=e57] [cursor=pointer]:
+          - /url: https://twitter.com/stevenfewster
+          - img [ref=e58]
+        - link "linkedin" [ref=e60] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/stevenfewster/
+          - img [ref=e61]
+        - link "rss feed" [ref=e64] [cursor=pointer]:
+          - /url: /rss.xml
+          - img [ref=e65]

@@ -12,7 +12,7 @@ import CardLong from "../components/CardLong.astro";
 import CocktailList from "../components/CocktailList.astro";
 
 const posts = (
-  await getCollection("BlogPosts", ({ data }) => {
+  await getCollection("blogposts", ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true;
   })
 )
@@ -36,6 +36,7 @@ const posts = (
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
       category="Cocktails and Code"
+      noViewTransitions={true}
     />
   </head>
   <body>

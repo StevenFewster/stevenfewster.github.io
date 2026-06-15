@@ -1,7 +1,7 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
 
 interface Props {
@@ -9,11 +9,12 @@ interface Props {
 	description: string;
 	image?: string;
 	category?: string;
+	noViewTransitions?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/android-chrome-512x512', category } = Astro.props;
+const { title, description, image = '/android-chrome-512x512', category, noViewTransitions = false } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -75,4 +76,4 @@ const { title, description, image = '/android-chrome-512x512', category } = Astr
 <meta name="geo.region" content="GB">
 <meta name="geo.placename" content="London">
 <link href="/about/" rel="author">
-<ViewTransitions />
+{!noViewTransitions && <ClientRouter />}

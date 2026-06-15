@@ -9,7 +9,7 @@ import { Category } from "../enums";
 import CardBase from "../components/CardBase.astro";
 
 const posts = (
-  await getCollection("BlogPosts", ({ data }) => {
+  await getCollection("blogposts", ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true;
   })
 )

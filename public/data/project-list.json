@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "priority": 6,
+    "name": "Job List App",
+    "shortDescription": "A job application management tool",
+    "description": "An application to manage and track job applications, including features for adding, editing, and deleting job entries, as well as categorizing them by status, and adding phases.",
+    "tags": [
+      "app",
+      "django",
+      "vuejs",
+      "volt",
+      "tailwindcss",
+      "primereact",
+      "postgresql",
+      "docker"
+    ],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "Not Started"
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "name": "To-Do List App",
+    "shortDescription": "Simple ToDo List to learn Django",
+    "description": "Nothing fancy, just a simple ToDo List application to learn Django. Force completion and deployment.",
+    "tags": ["app", "django", "react", "docker"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "priority": 3,
+    "name": "Actualiti Company Website",
+    "shortDescription": "A company website for Actualiti",
+    "description": "A website for Actualiti to showcase their services, projects, and team. It will include sections for about the company, services, projects, team, and contact information.",
+    "tags": ["website", "html", "css", "javascript", "astro", "tailwindcss"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "In Progress"
+  },
+  {
+    "id": 4,
+    "priority": 4,
+    "name": "Scanalog",
+    "shortDescription": "Capturing physical DVD collections in a digital format",
+    "description": "An application to digitize and organize physical DVD collections. Users can scan their DVDs, add metadata, and manage their digital library. Maybe pivot on development platform to Expo",
+    "tags": ["app", "flutter", "serverpod", "expo"],
+    "githubLink": "https://github.com/StevenFewster/com.actualiti.flutter",
+    "liveLink": null,
+    "status": "Paused"
+  },
+  {
+    "id": 5,
+    "priority": 0,
+    "name": "Sweepstake Website",
+    "shortDescription": "A personal website for managing sweepstakes",
+    "description": "A website to manage and participate in sweepstakes. Users can enter sweepstakes, view results, and manage their entries. Backendless, data fetched and scores computed by TypeScript, automatically using github actions to run on a schedule. Frontend built with React, TailwindCSS, and DaisyUI. ",
+    "tags": [
+      "website",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "tailwindcss",
+      "daisyui",
+      "vibe coded",
+      "github actions"
+    ],
+    "githubLink": "https://github.com/StevenFewster/sweeps",
+    "liveLink": "https://stevenfewster.com/sweeps/",
+    "status": "Complete"
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "name": "This Project List Page",
+    "shortDescription": "A personal project list page to track and organise my projects",
+    "description": "A personal project list page to track and organise my projects. Keep track of what I've started, in progress, and completed.",
+    "tags": ["website", "html", "css", "javascript", "vuejs", "tailwindcss"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "In Progress"
+  },
+  {
+    "id": 7,
+    "priority": 7,
+    "name": "Big Data PoC",
+    "shortDescription": "A proof of concept for big data processing client-side",
+    "description": "A proof of concept project to explore big data processing techniques and technologies. It will include experiments with data ingestion, processing, and visualization.",
+    "tags": [
+      "project",
+      "big data",
+      "python",
+      "fastapi",
+      "angular",
+      "echarts",
+      "DuckDB+WASM",
+      "web workers"
+    ],
+    "githubLink": "https://github.com/StevenFewster/webworkers-wasm-duckdb",
+    "liveLink": null,
+    "status": "Paused"
+  },
+  {
+    "id": 8,
+    "priority": 8,
+    "name": "ngx-zod-interceptor",
+    "shortDescription": "Library for validating Angular HTTP requests and responses using Zod schemas",
+    "description": "A library for validating Angular HTTP requests and responses using Zod schemas. It provides a simple and type-safe way to ensure data integrity in your Angular applications.",
+    "tags": ["library", "angular", "typescript", "zod"],
+    "githubLink": "https://github.com/StevenFewster/ngx-zod-interceptor",
+    "liveLink": null,
+    "status": "In Progress"
+  },
+  {
+    "id": 9,
+    "priority": 9,
+    "name": "Recipe Book Companion Box",
+    "shortDescription": "Needs a snappier name, but it's a companion box of herbs/spices",
+    "description": "Avoid the frustration of missing ingredients with this companion box of herbs and spices, nicely packaged for convenience. Ideal gift.  Needs to scrape book, find all ingredients, provide some of the harder to find ones.",
+    "tags": ["website", "ecommerce", "ai"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "Not Started"
+  },
+  {
+    "id": 10,
+    "priority": 10,
+    "name": "Goal Setting App",
+    "shortDescription": "An app to help users set and achieve their goals",
+    "description": "Uses AI to help users set long term goals, break them down into smaller tasks, and track their progress. It will include features for setting deadlines, reminders, and providing motivational content. Could also include a social aspect for sharing goals and progress with friends. Could also include a journaling feature for reflecting on progress and challenges.  ",
+    "tags": ["app", "ai"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "Not Started"
+  },
+  {
+    "id": 11,
+    "priority": 11,
+    "name": "Personal Finance Dashboard (DEMO)",
+    "shortDescription": "A dashboard to track and manage personal finances",
+    "description": "Practice/Example application. Help users track and manage their personal finances, find savings, upload data from supermarket shop, multiple back accounts and classifications.",
+    "tags": ["app", "ai"],
+    "githubLink": null,
+    "liveLink": null,
+    "status": "Not Started"
+  },
+  {
+    "id": 12,
+    "priority": 12,
+    "name": "Cranky Hippo",
+    "shortDescription": "Local Events Aggregator and Publisher",
+    "description": "An application to aggregate and publish local events, providing users with up-to-date information on what's happening in their area. It could include features for event discovery, categorization, and notifications.  Users can scan and have read flyers etc.",
+    "tags": ["app", "website", "ai"],
+    "githubLink": "https://stevenfewster.com/projects/cranky-hippo/",
+    "liveLink": null,
+    "status": "Not Started"
+  }
+]

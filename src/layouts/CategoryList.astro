@@ -11,7 +11,7 @@ import CardBase from "../components/CardBase.astro";
 const { categoryName, categories } = Astro.props;
 
 const posts = (
-  await getCollection("BlogPosts", ({ data }) => {
+  await getCollection("blogposts", ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true;
   })
 )

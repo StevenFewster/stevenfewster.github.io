@@ -1,0 +1,31 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ProjectList from "../components/ProjectList.vue";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import projectData from "../../public/data/project-list.json";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div
+        class="h-14 bg-[url('/backgrounds/radiant-gradient.png')] bg-fixed bg-repeat"
+      >
+        <h1 class="container mx-auto py-3 text-2xl text-wedgewood-50">
+          <span class="px-4">Project List</span>
+        </h1>
+      </div>
+      <section class="container mx-auto flex flex-wrap">
+        <ProjectList projectData={projectData} client:only="vue" />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

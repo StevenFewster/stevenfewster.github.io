@@ -8,7 +8,7 @@ import ArticleTitle from '../components/ArticleTitle.astro';
 import ReviewTitle from '../components/ReviewTitle.astro';
 import { getImage } from 'astro:assets';
 
-type Props = CollectionEntry<'BlogPosts'>['data'];
+type Props = CollectionEntry<'blogposts'>['data'];
 
 const { title, description, type, meta, date, updatedDate, category, attr } = Astro.props;
 let cover;

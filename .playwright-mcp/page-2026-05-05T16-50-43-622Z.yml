@@ -1,0 +1,250 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Logo for stevenfewster.com website Steven Fewster" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Logo for stevenfewster.com website" [ref=e4]
+      - generic [ref=e5]: Steven Fewster
+    - navigation [ref=e6]:
+      - link "Code" [ref=e7] [cursor=pointer]:
+        - /url: /code/
+      - link "Projects" [ref=e8] [cursor=pointer]:
+        - /url: /projects/
+      - link "Cocktails" [ref=e9] [cursor=pointer]:
+        - /url: /cocktails/
+      - link "Editorials" [ref=e10] [cursor=pointer]:
+        - /url: /editorials/
+    - generic [ref=e12]:
+      - link "github" [ref=e13] [cursor=pointer]:
+        - /url: https://github.com/StevenFewster
+        - img [ref=e14]
+      - link "linkedin" [ref=e16] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/stevenfewster/
+        - img [ref=e17]
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e24]:
+        - img "blog" [ref=e25]
+        - generic [ref=e26]:
+          - heading "projects" [level=2] [ref=e27]:
+            - link "projects" [ref=e28] [cursor=pointer]:
+              - /url: /projects
+          - link "Project Cranky Hippo" [ref=e29] [cursor=pointer]:
+            - /url: /projects/cranky-hippo/
+            - heading "Project Cranky Hippo" [level=1] [ref=e30]
+          - paragraph [ref=e31]: Planning stage for a new project to help promote live events/scanning fliers
+          - paragraph [ref=e32]:
+            - time [ref=e33]: Jan 4, 2025
+      - generic [ref=e35]:
+        - img "blog" [ref=e36]
+        - generic [ref=e37]:
+          - heading "editorials" [level=2] [ref=e38]:
+            - link "editorials" [ref=e39] [cursor=pointer]:
+              - /url: /editorials
+          - link "Starting With Why" [ref=e40] [cursor=pointer]:
+            - /url: /editorials/starting-with-why/
+            - heading "Starting With Why" [level=1] [ref=e41]
+          - paragraph [ref=e42]: Much like mobile-first development, establishing why we're doing something is often spoken about but I've rarely seen put in to practice. Let's try and change that.
+          - paragraph [ref=e43]:
+            - time [ref=e44]: Jan 3, 2025
+      - generic [ref=e46]:
+        - img "blog" [ref=e47]
+        - generic [ref=e48]:
+          - heading "editorials" [level=2] [ref=e49]:
+            - link "editorials" [ref=e50] [cursor=pointer]:
+              - /url: /editorials
+          - link "Activity Log 2025" [ref=e51] [cursor=pointer]:
+            - /url: /editorials/annual-log-of-stuff-2025/
+            - heading "Activity Log 2025" [level=1] [ref=e52]
+          - paragraph [ref=e53]: Keeping track of what I'm doing and some Three. Word. Reviews.
+          - paragraph [ref=e54]:
+            - time [ref=e55]: Dec 31, 2024
+      - generic [ref=e57]:
+        - img "blog" [ref=e58]
+        - generic [ref=e59]:
+          - heading "editorials" [level=2] [ref=e60]:
+            - link "editorials" [ref=e61] [cursor=pointer]:
+              - /url: /editorials
+          - link "Hannah Green and her Unfeasibly Mundane Existence" [ref=e62] [cursor=pointer]:
+            - /url: /editorials/hannah-green-and-her-unfeasibly-mundane-existance/
+            - heading "Hannah Green and her Unfeasibly Mundane Existence" [level=1] [ref=e63]
+          - paragraph [ref=e64]: A Michael Marshall Smith Book
+          - paragraph [ref=e65]:
+            - time [ref=e66]: Nov 15, 2023
+      - generic [ref=e67]:
+        - link "Cover image for J is for Julep J is for Julep" [ref=e69] [cursor=pointer]:
+          - /url: /cocktails/j-is-for-julep/
+          - img "Cover image for J is for Julep" [ref=e70]
+          - heading "J is for Julep" [level=2] [ref=e72]
+        - link "Cover image for I is for Ink Martini I is for Ink Martini" [ref=e74] [cursor=pointer]:
+          - /url: /cocktails/i-is-for-ink-martini/
+          - img "Cover image for I is for Ink Martini" [ref=e75]
+          - heading "I is for Ink Martini" [level=2] [ref=e77]
+        - link "Cover image for G is for G and Tea G is for G and Tea" [ref=e79] [cursor=pointer]:
+          - /url: /cocktails/g-is-for-g-and-tea/
+          - img "Cover image for G is for G and Tea" [ref=e80]
+          - heading "G is for G and Tea" [level=2] [ref=e82]
+        - link "Cover image for F is for Fruit and Nut (F revisited) F is for Fruit and Nut (F revisited)" [ref=e84] [cursor=pointer]:
+          - /url: /cocktails/f-is-for-fruit-and-nut/
+          - img "Cover image for F is for Fruit and Nut (F revisited)" [ref=e85]
+          - heading "F is for Fruit and Nut (F revisited)" [level=2] [ref=e87]
+        - link "Cover image for F is for French Martini F is for French Martini" [ref=e89] [cursor=pointer]:
+          - /url: /cocktails/f-is-for-french-martini/
+          - img "Cover image for F is for French Martini" [ref=e90]
+          - heading "F is for French Martini" [level=2] [ref=e92]
+        - link "Cover image for H is for Highland Sling H is for Highland Sling" [ref=e94] [cursor=pointer]:
+          - /url: /cocktails/h-is-for-highland-sling/
+          - img "Cover image for H is for Highland Sling" [ref=e95]
+          - heading "H is for Highland Sling" [level=2] [ref=e97]
+        - link "Cover image for E is for Elderflower Manhattan E is for Elderflower Manhattan" [ref=e99] [cursor=pointer]:
+          - /url: /cocktails/e-is-for-elderflower-manhattan/
+          - img "Cover image for E is for Elderflower Manhattan" [ref=e100]
+          - heading "E is for Elderflower Manhattan" [level=2] [ref=e102]
+        - link "Cover image for D is for Dirty Sanchez D is for Dirty Sanchez" [ref=e104] [cursor=pointer]:
+          - /url: /cocktails/d-is-for-dirty-sanchez/
+          - img "Cover image for D is for Dirty Sanchez" [ref=e105]
+          - heading "D is for Dirty Sanchez" [level=2] [ref=e107]
+        - link "Cover image for C is for Corpse Reviver No. 2 C is for Corpse Reviver No. 2" [ref=e109] [cursor=pointer]:
+          - /url: /cocktails/c-is-for-corpse-reviver-no-2
+          - img "Cover image for C is for Corpse Reviver No. 2" [ref=e110]
+          - heading "C is for Corpse Reviver No. 2" [level=2] [ref=e112]
+        - link "Cover image for B is for Blueberry Berry Nice B is for Blueberry Berry Nice" [ref=e114] [cursor=pointer]:
+          - /url: /cocktails/b-is-for-blueberry-berry-nice/
+          - img "Cover image for B is for Blueberry Berry Nice" [ref=e115]
+          - heading "B is for Blueberry Berry Nice" [level=2] [ref=e117]
+        - link "Cover image for A is for Apricot Sour A is for Apricot Sour" [ref=e119] [cursor=pointer]:
+          - /url: /cocktails/a-is-for-apricot-sour/
+          - img "Cover image for A is for Apricot Sour" [ref=e120]
+          - heading "A is for Apricot Sour" [level=2] [ref=e122]
+      - generic [ref=e125]:
+        - img "Cover image for Chaos Monkeys" [ref=e127]
+        - generic [ref=e128]:
+          - heading "editorials" [level=2] [ref=e129]:
+            - link "editorials" [ref=e130] [cursor=pointer]:
+              - /url: /editorials
+          - link "Chaos Monkeys" [ref=e131] [cursor=pointer]:
+            - /url: /editorials/chaos-monkeys/
+            - heading "Chaos Monkeys" [level=2] [ref=e132]
+          - paragraph [ref=e133]: A book about making it big in Silicon Valley tech
+          - paragraph [ref=e134]:
+            - time [ref=e135]: Sep 19, 2023
+      - generic [ref=e137]:
+        - img "Cover image for Why would you want to write a unit test for environment.ts" [ref=e139]
+        - generic [ref=e140]:
+          - heading "code" [level=2] [ref=e141]:
+            - link "code" [ref=e142] [cursor=pointer]:
+              - /url: /code
+          - link "Why would you want to write a unit test for environment.ts" [ref=e143] [cursor=pointer]:
+            - /url: /code/why-test-environment-ts/
+            - heading "Why would you want to write a unit test for environment.ts" [level=2] [ref=e144]
+          - paragraph [ref=e145]: With Angular I've been caught out more than once with build failing in prod because I've not synced environment.ts and environment.prod.ts - so write a unit test
+          - paragraph [ref=e146]:
+            - time [ref=e147]: Feb 6, 2023
+      - generic [ref=e149]:
+        - img "Cover image for FeathersJS/Angular App for Managing Logos" [ref=e151]
+        - generic [ref=e152]:
+          - heading "projects" [level=2] [ref=e153]:
+            - link "projects" [ref=e154] [cursor=pointer]:
+              - /url: /projects
+          - link "FeathersJS/Angular App for Managing Logos" [ref=e155] [cursor=pointer]:
+            - /url: /projects/site-suite-angular-feathers-project/
+            - heading "FeathersJS/Angular App for Managing Logos" [level=2] [ref=e156]
+          - paragraph [ref=e157]: Creating a Javascript application to manage internal sites and provide a consistent set of logos
+          - paragraph [ref=e158]:
+            - time [ref=e159]: Apr 24, 2020
+      - generic [ref=e161]:
+        - img "Cover image for Street Art From South America" [ref=e163]
+        - generic [ref=e164]:
+          - heading "editorials" [level=2] [ref=e165]:
+            - link "editorials" [ref=e166] [cursor=pointer]:
+              - /url: /editorials
+          - link "Street Art From South America" [ref=e167] [cursor=pointer]:
+            - /url: /editorials/street-art-south-america/
+            - heading "Street Art From South America" [level=2] [ref=e168]
+          - paragraph [ref=e169]: Some photos of the interesting graffiti in South America
+          - paragraph [ref=e170]:
+            - time [ref=e171]: Sep 1, 2014
+      - generic [ref=e173]:
+        - img "Cover image for First Angular Project" [ref=e175]
+        - generic [ref=e176]:
+          - heading "projects" [level=2] [ref=e177]:
+            - link "projects" [ref=e178] [cursor=pointer]:
+              - /url: /projects
+          - link "First Angular Project" [ref=e179] [cursor=pointer]:
+            - /url: /projects/a-first-angular-project/
+            - heading "First Angular Project" [level=2] [ref=e180]
+          - paragraph [ref=e181]: A simple project I did for a job interview this one time
+          - paragraph [ref=e182]:
+            - time [ref=e183]: Apr 8, 2014
+      - generic [ref=e185]:
+        - img "Cover image for Recursively List All Files/Folders with Excel VBA" [ref=e187]
+        - generic [ref=e188]:
+          - heading "code" [level=2] [ref=e189]:
+            - link "code" [ref=e190] [cursor=pointer]:
+              - /url: /code
+          - link "Recursively List All Files/Folders with Excel VBA" [ref=e191] [cursor=pointer]:
+            - /url: /code/excel-vba-recursive-file-folder/
+            - heading "Recursively List All Files/Folders with Excel VBA" [level=2] [ref=e192]
+          - paragraph [ref=e193]: Directory file listings and a good introduction to recursion use case for newbies
+          - paragraph [ref=e194]:
+            - time [ref=e195]: Apr 1, 2014
+      - generic [ref=e197]:
+        - img "Cover image for Steven Fewster Does Nothing for Charity" [ref=e199]
+        - generic [ref=e200]:
+          - heading "editorials" [level=2] [ref=e201]:
+            - link "editorials" [ref=e202] [cursor=pointer]:
+              - /url: /editorials
+          - link "Steven Fewster Does Nothing for Charity" [ref=e203] [cursor=pointer]:
+            - /url: /sundries/steven-fewster-does-nothing-for-charity/
+            - heading "Steven Fewster Does Nothing for Charity" [level=2] [ref=e204]
+          - paragraph [ref=e205]: A brief flirt with altruism, minimum effort
+          - paragraph [ref=e206]:
+            - time [ref=e207]: Jan 27, 2014
+      - generic [ref=e209]:
+        - img "Cover image for Episode IV A New Hope(fully interesting side project)" [ref=e211]
+        - generic [ref=e212]:
+          - heading "projects" [level=2] [ref=e213]:
+            - link "projects" [ref=e214] [cursor=pointer]:
+              - /url: /projects
+          - link "Episode IV - A New Hope(fully interesting side project)" [ref=e215] [cursor=pointer]:
+            - /url: /projects/a-new-hopefully-interesting-side-project/
+            - heading "Episode IV - A New Hope(fully interesting side project)" [level=2] [ref=e216]
+          - paragraph [ref=e217]: Another side project that never got going
+          - paragraph [ref=e218]:
+            - time [ref=e219]: Oct 11, 2013
+      - generic [ref=e221]:
+        - img "Cover image for You won't let those robots defeat me" [ref=e223]
+        - generic [ref=e224]:
+          - heading "code" [level=2] [ref=e225]:
+            - link "code" [ref=e226] [cursor=pointer]:
+              - /url: /code
+          - link "You won't let those robots defeat me" [ref=e227] [cursor=pointer]:
+            - /url: /code/wont-let-those-robots-defeat-me/
+            - heading "You won't let those robots defeat me" [level=2] [ref=e228]
+          - paragraph [ref=e229]: An Apache RewriteRule to restrict crawling of dev sites
+          - paragraph [ref=e230]:
+            - time [ref=e231]: Feb 19, 2013
+  - contentinfo [ref=e232]:
+    - generic [ref=e233]:
+      - paragraph [ref=e234]:
+        - link "Logo for stevenfewster.com website ©2026" [ref=e235] [cursor=pointer]:
+          - /url: /
+          - img "Logo for stevenfewster.com website" [ref=e236]
+          - text: ©2026
+      - generic [ref=e237]:
+        - link "About" [ref=e238] [cursor=pointer]:
+          - /url: /about/
+        - link "Contact" [ref=e239] [cursor=pointer]:
+          - /url: /contact/
+      - generic [ref=e241]:
+        - link "github" [ref=e242] [cursor=pointer]:
+          - /url: https://github.com/StevenFewster
+          - img [ref=e243]
+        - link "twitter" [ref=e245] [cursor=pointer]:
+          - /url: https://twitter.com/stevenfewster
+          - img [ref=e246]
+        - link "linkedin" [ref=e248] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/stevenfewster/
+          - img [ref=e249]
+        - link "rss feed" [ref=e252] [cursor=pointer]:
+          - /url: /rss.xml
+          - img [ref=e253]
