@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest"
   },
   "dependencies": {
     "@astrojs/mdx": "^6.0.3",
@@ -21,8 +22,12 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/test-utils": "^2.4.11",
     "autoprefixer": "^10.4.21",
+    "happy-dom": "^20.10.3",
     "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.6.1"
+    "prettier-plugin-tailwindcss": "^0.6.1",
+    "vitest": "^4.1.9"
   }
 }

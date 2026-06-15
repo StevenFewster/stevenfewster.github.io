@@ -80,9 +80,9 @@
     "shortDescription": "A personal project list page to track and organise my projects",
     "description": "A personal project list page to track and organise my projects. Keep track of what I've started, in progress, and completed.",
     "tags": ["website", "html", "css", "javascript", "vuejs", "tailwindcss"],
-    "githubLink": null,
-    "liveLink": null,
-    "status": "In Progress"
+    "githubLink": "https://github.com/StevenFewster/stevenfewster.github.io/blob/main/src/components/ProjectList.vue",
+    "liveLink": "https://stevenfewster.com/projects/",
+    "status": "Complete"
   },
   {
     "id": 7,
