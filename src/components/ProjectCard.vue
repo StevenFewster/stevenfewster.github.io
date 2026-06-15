@@ -24,11 +24,12 @@
             <span
               v-for="tag in project.tags"
               :key="tag"
-              class="nobspace whitespace-nowrap rounded-full border border-wedgewood-200 bg-wedgewood-50 px-3 py-1 text-sm text-wedgewood-600"
-              v-bind:class="{
-                'bg-wedgewood-300': tagMatch(tag, searchTerm),
-                'text-wedgewood-700': tagMatch(tag, searchTerm),
-              }"
+              class="nobspace whitespace-nowrap rounded-full border border-wedgewood-200 px-3 py-1 text-sm"
+              :class="
+                tagMatch(tag, searchTerm)
+                  ? 'bg-wedgewood-300 text-wedgewood-700'
+                  : 'bg-wedgewood-50 text-wedgewood-600'
+              "
             >
               {{ tag }}
             </span>
